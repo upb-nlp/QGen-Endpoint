@@ -2,9 +2,10 @@ The API for generating a set of multiple-choice questions starting from a contex
 
 # API usage
 
-You can use our Flask server to send requests for scoring. The request must come in the form of a POST to https://chat.readerbench.com/quiz/generate.
-An API key is required to access the deployed service. The key should be added in an .env file using the name "API_TOKEN".
+You can use our Flask server to send requests for scoring. The request must come in the form of a POST to `https://chat.readerbench.com/quiz/generate`.
+An API key is required to access the deployed service.
 
+```c
 curl --location 'https://chat.readerbench.com/quiz/generate' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -12,3 +13,4 @@ curl --location 'https://chat.readerbench.com/quiz/generate' \
     "num_questions": 5,
     "token": "API_TOKEN"
 }'
+```
