@@ -1,4 +1,3 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 from vllm import LLM
 from vllm.sampling_params import SamplingParams
