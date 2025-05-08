@@ -16,7 +16,7 @@ CORS(app)
 device = "cuda"
 
 def load_models():
-    generator = QuestionGenerationUtils('cuda', 'upb-nlp/llama3.1_8b_qall_with_explanations', os.getenv("HF_TOKEN"))
+    generator = QuestionGenerationUtils('cuda', 'upb-nlp/llama3.1_8b_qall_with_explanations')
     filters = QuestionFilterUtils('cuda')
     return generator, filters
 

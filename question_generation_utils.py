@@ -12,7 +12,7 @@ def entropy_based_logits_processor(token_ids, logits):
         return logits
     
 class QuestionGenerationUtils:
-    def __init__(self, device, model_name, token=None):
+    def __init__(self, device, model_name):
         if device not in ['cpu', 'cuda', 'mps']:
             raise ValueError(f"Invalid device: {device}. Must be one of 'cpu', 'cuda', 'mps'.")
         
